@@ -1,18 +1,103 @@
-header img{
-  width: 30px;; 
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
+/*************      Header   **************/
 header{
   background-color: #0d363a ;
+   padding: 0;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:0;
-  margin: 0;;
+  height: 72px;
 }
 
 header .left{
   display: flex;
-  gap: 20px;
-  padding-left: 10px;
+  gap: 15px;
+  padding-left: 50px;
+}
+
+header .left p{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #fecd59;
+  font-size: 30px;
+}
+
+header .left img{
+  height: 50px;
+  align-self: center;
+}
+
+header .right ul {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+  padding-right: 50px;
+}
+
+header .right a{
+  text-decoration: none;
+  color: #fecd59;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+/**********************Main******************/
+
+.intro{
+  display: flex;
+  background-color: #0d363a;
+  padding: 60px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.intro .left{
+  display: flex;
+  max-width: 50%;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.intro .left h1{
+  font-family: 'Arial Narrow Bold', sans-serif;
+  color: #fecd59;
+  font-size: 48px;
+  margin:0;
+}
+
+.intro .left p{
+  font-family: 'Times New Roman', Times, serif;
+  color: #fecd59;
+  font-size: 18px;
+}
+  
+.intro .left button{
+  background-color: #f6ae3b;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 30px 10px 30px;
+  border-style: none;
+  border-radius: 10px;
+}
+
+.intro .right {
+  display: flex;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+}
+
+.intro .right img{
+  max-width: 500px;
+  width: 100%;
 }
