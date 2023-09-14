@@ -4,7 +4,7 @@ body{
   flex-direction: column;
 }
 
-/*************      Header   **************/
+/*************          Header         **************/
 header{
   background-color: #0d363a ;
    padding: 0;
@@ -46,10 +46,20 @@ header .right a{
   color: #fecd59;
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
+  transition: .2s;
 }
 
-/**********************Main******************/
+header .right a:hover {
+  font-size: 25px;
+  font-weight: bold;
+}
 
+/**********************                   Main                  ******************/
+
+
+
+
+/*************              Intro               *************/
 .intro{
   display: flex;
   background-color: #0d363a;
@@ -89,8 +99,15 @@ header .right a{
   padding: 10px 30px 10px 30px;
   border-style: none;
   border-radius: 10px;
+  transition: transform .2s;
 }
 
+.intro .left button:hover {
+  transform: scale(1.1);
+  background-color: #067b86;
+  border-color: #f6ae3b;
+  border-style: solid;
+}
 .intro .right {
   display: flex;
   flex-shrink: 1;
@@ -100,4 +117,57 @@ header .right a{
 .intro .right img{
   max-width: 500px;
   width: 100%;
+  transition: transform .2s;
+}
+.intro .right img:hover {
+  transform: scale(1.2);
+}
+
+
+/*************              INFO               *************/
+
+.info{
+  text-align: center;
+  padding-top: 50px;
+  color: #0d363a;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+.info .cards-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px;
+padding-bottom: 50px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border:#0d363a;
+  border-style: solid;
+  border-radius: 50px; 
+  width: 256px;
+  transition: transform .2s;
+  margin: 20px;
+}
+
+.card:hover{
+  border-color: #067b86;
+  transform: scale(1.1);
+  font-weight: bolder;
+}
+.card a{
+  text-decoration: none;
+  color: #0d363a;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+.card a:hover{
+  font-weight: bolder;
+  color: #067b86;
 }
