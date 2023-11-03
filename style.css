@@ -79,7 +79,8 @@ header .right a:hover {
 .intro{
   display: flex;
   background-color: #0d363a;
-  padding: 7vw;
+  padding: 5vw;
+  padding-top: 2vh;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
